@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+a{
+    text-decoration: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+body{
+    background-color: #303030;
+}
+section{
+    margin-top: 50px;
+}
+.test{
+    width:40%;
+    border: 0px solid yellow;
+    text-align: center;
+    padding: 10px;
+    
+
+
+    
+}
+header{
+    background-color: #303030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 50px;
+    padding:0 5%;
+}
+header.logo a{
+    font-size: 25px;
+    color: #29d9d5;
+    
+}
+header .logo a:visited{
+    color: #29d9d5;
+}
+header .logo a span{
+    color: #fff;
+}
+.logo a span:visited{
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    margin-left:15px;
+    margin-right: 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #29d9d5;
+    font-size: 14px;
+}
+.bnt-reservation{
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.bnt-reservation:hover{
+    background-color: #29d9d5;
+    color: #fff;
+    
+}
+
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("monde.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#home h2{
+    font-size: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home h4{
+    font-size: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    
+}
+#nos{
+    font-size: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#noss{
+    font-size: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    padding-top: 40%; 
+    color: #12c5d9;
+}
+#samp{
+    font-size: 15px;
+    color: #12c5d9;
+}
+#home p{
+    color:#fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.home-btn{
+    margin-bottom: 20px;
+}
+/* #a-propos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding:0 10%;
+    width: 100%;
+    margin-left: 2px;
+} */
+.title{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+    color: #29d9d5;
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    
+}
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}  
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+
+}
+.img-desc .left{
+    position: relative;
+    margin-left: 10px;
+    height: 250px;
+}
+
+#myvideo{
+    position: relative;
+    width: 100;
+    transition:transform 15s ;
+    animation:myAnimation 15s;
+    
+    margin-left: 8px;
+    
+}
+@keyframes myAnimation{
+
+    100%{transform: translateX(0px);}
+
+}
+.img-desc .right h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.img-desc .right p{
+    color: #fff;
+    font: 14px;
+    margin-bottom: 20px;
+}
+.img-desc .right a{
+    border: 2px solid aqua;
+    padding: 5px 20px;
+}
+.img-desc .right a:hover{
+   color: white;
+   background-color: aqua;
+   border: 2px solid white;
+}
+.img-desc .right a:visited{
+    color: #fff;
+}
+
+.office{
+    margin: 4%;
+    margin-top: 30%;
+    
+}
+
+.office .office_card{
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 10%;
+}
+.office .card{
+    padding: 11px;
+    
+}
+.office .card div{
+    margin: 0;
+    background-color: #f0f5f3f1;
+    border: 2px solid rgb(17, 6, 233);
+    height: 50px;
+    position: relative;
+}
+.office .card div a{
+    position: absolute;
+    right: 0;
+    background-color: #12c5d9;
+    color: #fff;
+    opacity: 0.80;
+    
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+}
+.office .card div a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.office .card div span{
+    font-size: 20px;
+    letter-spacing: 0.55px;
+    color: #747474;
+    position: absolute;
+    left: 10px;
+}
+.office .card:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 6px #747474;
+}
+/* sydney */
+#home_sydney{
+background: linear-gradient(rgba);
+
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+/* .container img {
+    width: 100%;
+    height: auto;
+} */
+
+.img-fluid {
+    width: 100%;
+    height: 25rem !important;
+}
+
+
+
+
+.card{
+    padding: 11px;
+}
+.card div{
+    margin: 0;
+    background-color: #fff;
+    border: 2px solid rgb(255, 252, 252);
+    height: 50px;
+    position: relative;
+}
+.card div a{
+    position: absolute;
+    right: 0;
+    background-color: #3d83df;
+    color: #fff;
+    opacity: 0.80;
+    
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+}
+.card div a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.card div span{
+    font-size: 20px;
+    letter-spacing: 0.55px;
+    color: #747474;
+    position: absolute;
+    left: 10px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 6px #747474;
+}
+#cr{
+    font-size: 29px;
+    padding-top: 39%;
+    color: #29d9d5;
+}
+
+ 
+#sidney-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("sydney-opera.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#venise-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("Venise\,\ Italie.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#rio-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("Rio\ de\ Janeiro\,\ Brésil.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#paris-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("Paris\,\ France.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#cancun-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("Cancun\,\ Mexique.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#bangkok-home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("Bangkok\,\ Thaïlande.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/*contact css*/
+
+
+#pied-formulaire{
+    text-align: right;
+    
+}
+#note{
+    margin: 0%;
+    padding: 0%;
+    background-color:#fff;
+    font-weight: bold;
+    
+}
+form{
+    background-color:#729acf;
+    padding: 30px;
+    border-radius: 10px;
+}
+form h1{
+    font-size: 20px;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: #303030;
+}
+form .corps-formulaire{
+display: flex;
+margin-bottom: 30px;
+}
+form .corps-formulaire .groupe{
+     margin-top: 20px;
+}
+input{
+    margin-top: 5%;
+    border: 1px solid#a3a3a3;
+    outline-color: #729acf;
+    border-radius: 5px;
+}
+form .corps-formulaire .droite{
+    margin-left: 40px;
+}
+form .corps-formulaire .droite .droite{
+    height: 100%;
+}
+#area{
+    margin-top: 5%;
+    padding: 7%;
+    background-color: #fcfbfb;
+    border: 2px solid #729acf;
+    border-radius: 5px;
+    resize: none;
+    height: 90%;
+    
+}
+form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #black;
+    color: # white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+
+#monde{
+    display: flex;
+    width: 100%;
+    border: 0px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 5%;
+
+}
+
+#t{
+    color: #12c5d9;
+}
+#te{
+    margin-top: 5%;
+    color: #black;
+    background-color: #a3a3a3;
+    
+}
+#tea{
+    margin-left: 5%;
+    margin-top: 2%;
+    color: #black;
+    background-color: #a3a3a3;
+}
+
+#lol{
+ 
+    
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 5%;
+    
+}
+
+
+
+
+
+
+
+
+
+  
